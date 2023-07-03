@@ -266,7 +266,7 @@ section {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -275,11 +275,16 @@ section {
   border-radius: 1rem;
   text-align: center;
   padding: 3rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .course-1 .box img {
   margin-bottom: 1rem;
   height: 8rem;
+}
+
+.course-1 .box img:hover {
+  transform: translate(-20px, -40px) rotate(-15deg) scale(1.4);
 }
 
 .course-1 .box h3 {
